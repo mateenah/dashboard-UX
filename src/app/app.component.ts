@@ -35,12 +35,17 @@ export class AppComponent {
  ];
  columnNames = ["Location", "Parent","Market trade volume (size)","Market increase/decrease (color)"];
    options = { 
-      minColor:"#ff7777",
-      midColor:'#ffff77',
-      maxColor:'#77ff77',
+    minColor: '#009688',
+    midColor: '#f7f7f7',
+    maxColor: '#ee8100',
       headerHeight:15,
-      showScale:true
+      showScale: true,
+      height: 500,
+      width: 1000,
+      fontColor: 'black',
+      useWeightedAverageForAggregation: true
    };
-   width = 550;
-   height = 400; 
+  //  width = 550;
+  //  height = 400;
+ 
 }
