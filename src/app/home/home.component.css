@@ -1,0 +1,27 @@
+/* custom CSS starts */
+.left {
+    background-color: #FFFFFF;
+    margin:25px;
+    /* height:95vh; */
+}
+.right {
+  /* background-color: red; */
+  margin:15px;
+  /* height:95vh; */
+}
+.chartBox{
+  background-color: #FFFFFF;
+  padding:12px
+}
+
+.rowSpacing{
+  padding:12px
+}
+
+.gray {
+  font-size:0.8rem;
+  color: #888;
+}
+
+
+/* custom CSS ends */

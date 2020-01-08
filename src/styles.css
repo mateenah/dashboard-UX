@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+  font-family: 'Goudy';
+
+  src: url("./assets/fonts/Goudy/goudy-old-style-bt.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Akzidenz';
+
+  src: url("./assets/fonts/Akzidenz/Akzidenz-grotesk-black.ttf") format('truetype');
+}
+
+body {
+  font-family: 'Goudy';
+}
+
+.main {
+    background-color: #EFEFEF;
+    height:100vh;
+    margin: 0;
+  }
