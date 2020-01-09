@@ -1,20 +1,18 @@
 /* custom CSS starts */
 .left {
+  background-color: #ffffff;
+  box-shadow: 4px 2px 7px 1px #5a50505e;
   margin: 25px;
-  background-color: #131313;
-  box-shadow: 4px 2px 7px 1px #5a5050;
   /* height:95vh; */
 }
 .right {
   /* background-color: red; */
   margin: 15px;
-
   /* height:95vh; */
 }
 .chartBox {
-  /* background-color: #000000; */
-  background-color: #131313;
-  box-shadow: 4px 2px 7px 1px #5a5050;
+  background-color: #ffffff;
+  box-shadow: 4px 2px 7px 1px #5a50505e;
   padding: 12px;
 }
 
