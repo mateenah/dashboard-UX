@@ -1,3 +1,9 @@
-<google-chart #chart [title]="title" [type]="type" [data]="data" [columnNames]="columnNames" [options]="options"
-[width]="width" [height]="height">
-</google-chart>
+<div class="chart-wrapper">
+    <canvas baseChart
+    [datasets]="bubbleChartData"
+    [options]="bubbleChartOptions"
+    [colors]="bubbleChartColors"
+    [legend]="bubbleChartLegend"
+    [chartType]="bubbleChartType">
+  </canvas>
+</div>

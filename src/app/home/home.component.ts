@@ -16,40 +16,46 @@ export class HomeComponent implements OnInit {
   type='TreeMap';
   data = [
     ["Global",null,0,0],
-    ["America","Global",0,0],
-    ["Europe","Global",0,0],
-    ["Asia","Global",0,0],
-    ["Australia","Global",0,0],
-    ["Africa","Global",0,0],
+    ["America","Global",90,50],
+    ["Australia","Global",90,10],
+    ["Indonesia","Global",90,-50],
+    ["Pakistan","Global",50,50],
+    ["Nigeria","Global",90,-4],
+    ["Europe","Global",30,4],
+    ["Asia","Global",10,-4],
+    ["Bangladesh","Global",10,-4],
 
-    ["USA","America",52,-31],
-    ["Mexico","America",24,12],
-    ["Canada","America",16,-23],
+    ["Nepal","Global",40,8],
+    ["Bhutan","Global",20,0],
+    ["Afghanistan","Global",20,-4],
 
-    ["France","Europe",42,-11],
-    ["Germany","Europe",31,-2],
-    ["Sweden","Europe",22,-13],
-
-    ["China","Asia",36,-4],
-    ["Japan","Asia",20,-12],
-    ["India","Asia",40,63],
-
-    ["Egypt","Australia",21,0],
-    ["Congo","Australia",10,12],
-    ["Zaire","Australia",8,10],
-        
  ];
  columnNames = ["Location", "Parent","Market trade volume (size)","Market increase/decrease (color)"];
    options = { 
-    minColor: '#F286DF',
-    midColor: '#f7f7f7',
-    maxColor: '#1FCB71',
-      headerHeight:15,
-      showScale: true,
-      height: 700,
-      width: 750,
+    // minColor: '#DEF6E9',
+    // midColor: '#F286DF',
+    // maxColor: '#1FCB71',
+      // headerHeight:15,
+      // showScale: true,
+      // height: 700,
+      // width: 750,
       fontColor: 'black',
-      useWeightedAverageForAggregation: true
+      // useWeightedAverageForAggregation: true,
+      
+      highlightOnMouseOver: true,
+      maxDepth: 1,
+      maxPostDepth: 2,
+      minHighlightColor: '#8c6bb1',
+      midHighlightColor: '#9ebcda',
+      maxHighlightColor: '#edf8fb',
+      minColor: '#009688',
+      midColor: '#f7f7f7',
+      maxColor: '#ee8100',
+      headerHeight: 15,
+      showScale: true,
+      // height: 500,
+      useWeightedAverageForAggregation: true,
+     
    };
   //  width = 550;
   //  height = 400;

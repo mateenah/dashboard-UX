@@ -15,10 +15,28 @@
 
 body {
   font-family: 'Goudy';
+  background-color: #000000;
+  color:white;
+  height:100vh; 
 }
 
 .main {
-    background-color: #EFEFEF;
-    height:100vh;
+  
+   
+    /* margin: 0; */
+  }
+
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
     margin: 0;
   }

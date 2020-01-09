@@ -1,4 +1,16 @@
 
-<google-chart #chart [title]="title" [type]="type" [data]="data" [columnNames]="columnNames" [options]="options"
+<!-- <google-chart #chart [title]="title" [type]="type" [data]="data" [columnNames]="columnNames" [options]="options"
 [width]="width" [height]="height">
-</google-chart>
+</google-chart> -->
+
+<div class="chart-wrapper">
+    <canvas baseChart 
+        [datasets]="lineChartData" 
+        [labels]="lineChartLabels" 
+        [options]="lineChartOptions"
+        [colors]="lineChartColors" 
+        [legend]="lineChartLegend" 
+        [chartType]="lineChartType" 
+        [plugins]="lineChartPlugins">
+    </canvas>
+</div>

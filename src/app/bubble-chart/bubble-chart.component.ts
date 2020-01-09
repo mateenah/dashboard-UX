@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Color, Label } from 'ng2-charts';
 
 @Component({
   selector: 'app-bubble-chart',
@@ -11,19 +12,36 @@ export class BubbleChartComponent implements OnInit {
 
   ngOnInit() {
   }
+  public bubbleChartOptions: ChartOptions = {
+    responsive: true,
+    scales: {
+      xAxes: [{
+        ticks: {
+          min: 0,
+          max: 50,
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          min: 0,
+          max: 50,
+        }
+      }]
+    }
+  };
+  public bubbleChartType: ChartType = 'bubble';
+  public bubbleChartLegend = true;
 
-  title = 'Age vs Weight';
-  type = 'BubbleChart';
-  data = [
-    ["Robert", 8, 12],
-    ["Mohan", 4, 5.5],
-    ["Ramesh", 11, 14],
-    ["Julie", 3, 3.5],
-    ["Sohan", 6.5, 7],
+  public bubbleChartData: ChartDataSets[] = [
+    {
+      data: [
+        { x: 15, y: 15, r: 15 },
+        { x: 25, y: 15, r: 25 },
+        { x: 36, y: 12, r: 33 },
+        { x: 10, y: 18, r: 18 },
+      ],
+      label: 'Investment Equities',
+    },
   ];
-  columnNames = ['Id', 'Age','Weight'];
-  options = { };
-  width = 300;
-  height = 200;
 
 }

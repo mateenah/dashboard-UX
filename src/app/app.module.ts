@@ -9,6 +9,7 @@ import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
 import { AreaChartComponent } from './area-chart/area-chart.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { HomeComponent } from './home/home.component';
+import { ChartsModule } from 'ng2-charts';
 
 
 
@@ -25,7 +26,8 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GoogleChartsModule
+    GoogleChartsModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
