@@ -16,45 +16,47 @@ export class HomeComponent implements OnInit {
   type='TreeMap';
   data = [
     ["Global",null,0,0],
-    ["America","Global",90,50],
-    ["Australia","Global",90,10],
-    ["Indonesia","Global",90,-50],
+
+    ["America","Global",80,40],
+    ["Australia","Global",80,40],
+    ["Indonesia","Global",60,-40],
     ["Pakistan","Global",50,50],
-    ["Nigeria","Global",90,-4],
+
+    ["Nigeria","Global",90,-30],
     ["Europe","Global",30,4],
-    ["Asia","Global",10,-4],
-    ["Bangladesh","Global",10,-4],
+    ["Asia","Global",10,10],
+    ["Bangladesh","Global",30,30],
 
     ["Nepal","Global",40,8],
-    ["Bhutan","Global",20,0],
-    ["Afghanistan","Global",20,-4],
+    ["Bhutan","Global",20,20],
+    ["Afghanistan","Global",20,20],
 
  ];
  columnNames = ["Location", "Parent","Market trade volume (size)","Market increase/decrease (color)"];
    options = { 
-    // minColor: '#DEF6E9',
-    // midColor: '#F286DF',
-    // maxColor: '#1FCB71',
-      // headerHeight:15,
-      // showScale: true,
-      // height: 700,
-      // width: 750,
-      fontColor: 'black',
-      // useWeightedAverageForAggregation: true,
-      
+  
+      fontColor: 'white',
       highlightOnMouseOver: true,
       maxDepth: 1,
       maxPostDepth: 2,
-      minHighlightColor: '#8c6bb1',
-      midHighlightColor: '#9ebcda',
-      maxHighlightColor: '#edf8fb',
-      minColor: '#009688',
-      midColor: '#f7f7f7',
-      maxColor: '#ee8100',
+
+      minHighlightColor: '#DEF6E9',
+      midHighlightColor: '#1FCB71',
+      maxHighlightColor: '#F286DF',
+
+      minColor: '#F286DF',
+      midColor: '#F8C8EF',
+      maxColor: '#1FCB71',
       headerHeight: 15,
       showScale: true,
       // height: 500,
       useWeightedAverageForAggregation: true,
+      textStyle: { color: "white",
+      fontName: "Goudy",
+        fontSize: "30px",
+        bold: false,
+        italic: false 
+      }
      
    };
   //  width = 550;
